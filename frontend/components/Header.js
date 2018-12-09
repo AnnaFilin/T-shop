@@ -51,8 +51,6 @@ const StyledHeader = styled.header`
     }
 `;
 
-
-
 const Header = () => (
     <StyledHeader>
         <div className="bar">
@@ -69,5 +67,19 @@ const Header = () => (
         <div>Cart</div>
     </StyledHeader>
 );
+
+
+
+// const Header = () => (
+//     <StyledHeader>
+//         <div className="bar">
+//             <Nav />
+//         </div>  
+//         <div className="sub-bar">
+//             <p>Search</p>
+//         </div>
+//         <div>Cart</div>
+//     </StyledHeader>
+// );
 
 export default Header;

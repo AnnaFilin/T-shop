@@ -8,7 +8,7 @@ function createClient({ headers }) {
     request: operation => {
       operation.setContext({
         fetchOptions: {
-          //credentials: 'include',   //this was bothering me with cors... :|
+          credentials: 'include',   //this was bothering me with cors... :|
         },
         headers,
       });
