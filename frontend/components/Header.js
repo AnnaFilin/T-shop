@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import Router from 'next/router';
 import NProgress from 'nprogress';
+import Cart from './Cart';
+import Search from './Search';
 
 Router.onRouteChangeStart = () => {
     NProgress.start();
@@ -47,7 +49,7 @@ const StyledHeader = styled.header`
     .sub-bar{
         display: grid;
         grid-template-columns: auto 1fr;
-       /* border-bottom: 2px solid ${props => props.theme.lightGreen};*/
+        border-bottom: 2px solid ${props => props.theme.lightGreen};
     }
 `;
 
@@ -62,9 +64,9 @@ const Header = () => (
             <Nav />
         </div>  
         <div className="sub-bar">
-            <p>Search</p>
+            <Search />
         </div>
-        <div>Cart</div>
+        <Cart />
     </StyledHeader>
 );
 
